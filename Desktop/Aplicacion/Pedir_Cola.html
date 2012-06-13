@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.iconos {
+	font-size: 14px;
+}
+.ui-icon-pide {
+	background-image: url(imagenes/menu_1.jpg);	
+	background-position: center top;
+}
+.ui-icon-transporte {
+	background-image: url(imagenes/menu_2.jpg);
+	background-position: center top;
+}
+.ui-icon-ubicacion {
+	background-image: url(imagenes/menu_3.jpg);
+	background-position: center top;
+}
+.ui-icon-config {
+	background-image: url(imagenes/menu_4.jpg);
+	background-position: center top;
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+<div data-role="page" id="page" data-theme="e">
+   
+   <!----------------Header----------------------->
+  <div data-role="header"> <a href="Principal.html" class="ui-icon-home" data-icon="home" data-iconpos="top" data-role="button"></a>
+    <h1>Pide Cola</h1>
+    <a href="#" data-role="button"  data-icon="refresh" data-iconpos="top"></a>
+    
+  </div>
+  <!----- Fin de Header------------------------->
+
+  <div data-role="header">
+    <h1>Pedir Cola</h1>
+  </div>
+  <div data-role="content">
+<div data-role="fieldcontain">
+   <label for="select-choice-1" class="select">Ruta:</label>
+   <select name="select-choice-1" id="select-choice-1">
+      <option value="baruta">USB</option>   
+      <option value="baruta">Baruta</option>
+      <option value="trinidad">La Trinidad</option>
+      <option value="metro">Metro</option>
+      <option value="sant">San Antonio</option>
+      <option value="teques">Los Teques</option>
+      <option value="hatillo">El Hatillo</option>
+      <option value="boyera">La Boyera</option>
+      <option value="cafetal">El cafetal</option>            
+   </select>
+   
+ <br>
+Hora:
+<center><table><tr>
+<div data-role="fieldcontain">
+<fieldset data-role="controlgroup"  data-type="horizontal">
+
+
+
+   <select name="select-choice-hora" id="select-choice-hora">
+      <option value="1">1</option>   
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="7">10</option>
+      <option value="8">11</option>
+      <option value="9">12</option>                  
+   </select>
+
+
+<select name="select-choice-min" id="select-choice-day">
+      <option value="00">00</option>   
+      <option value="15">15</option>
+      <option value="30">30</option>
+      <option value="30">45</option>         
+   </select>
+
+
+<select name="select-choice-m" id="select-choice-m">
+	<option value="AM">AM</option>
+    <option value="PM">PM</option>
+	<!-- etc. -->
+</select>
+</fieldset>
+</div>
+  
+</div>
+    <input type="button" value="Buscar" />
+    
+   <hr>
+<table align="center">
+<tr>
+<td><img src="imagenes/pics/amy_jones.jpg" width="65" height="65"/></td><td> Hora: 5:00 PM <br> Ruta: Metro <br> Asientos Disponibles: 2 <br> Punto de Encuentro: Parada </td> 
+<td><a href="#" data-role="button">Pedir Cola</a></td>
+</tr>
+
+<tr>
+<td><img src="imagenes/pics/gary_donovan.jpg" width="65" height="65"/></td><td> Hora: 4:30 PM <br> Ruta: San Antonio <br> Asientos Disponibles: 1  <br> Punto de Encuentro: Rectorado </td> 
+<td><a href="#" data-role="button">Pedir Cola</a></td>
+</tr>
+
+</table>
+  </div>
+  <!------------------ Footer----------------------->
+  <div data-role="footer">		
+	<div data-role="navbar" data-iconpos="top">
+		<ul>
+			<li><a href="Pide.html"  data-icon="pide" >Pide Cola</a></li>
+			<li><a href="Transporte.html" data-icon="transporte" >Transporte</a></li>
+			<li><a href="Ubicacion.html" data-icon="ubicacion" >Mi Ubicación</a></li>
+			<li><a href="Configuracion.html" data-icon="config"  data-icon=> Configuración</a></li>            
+		</ul>
+	</div><!-- /navbar -->
+</div>
+<!--------------------------- /Fin de Footer -->
+</div>
+</div>
+</body>
+</html>

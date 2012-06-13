@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tu ruta a la USB</title>
+<link href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.iconos {
+	font-size: 14px;
+}
+.ui-icon-pide {
+	background-image: url(imagenes/menu_1.jpg);	
+	background-position: center top;
+}
+.ui-icon-transporte {
+	background-image: url(imagenes/menu_2.jpg);
+	background-position: center top;
+}
+.ui-icon-ubicacion {
+	background-image: url(imagenes/menu_3.jpg);
+	background-position: center top;
+}
+.ui-icon-config {
+	background-image: url(imagenes/menu_4.jpg);
+	background-position: center top;
+}
+
+</style>
+
+
+
+<script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div data-role="page" id="page" data-theme="e">
+   
+   <!----------------Header----------------------->
+  <div data-role="header"> <a href="Principal.html" class="ui-icon-home" data-icon="home" data-iconpos="top" data-role="button"></a>
+    <h1>Configuración</h1>
+
+    
+  </div>
+  <!----- Fin de Header------------------------->
+  <div data-role="content">
+    <div data-role="collapsible-set">
+      <div data-role="collapsible"  >
+        <h3>Login USBID</h3>
+          <form action= "Principal.html">
+    <div data-role="fieldcontain">
+      <label for="textinput2">USBID:</label>
+      <input type="text" name="textinput2" id="textinput2" value=""  />
+    </div>
+    <div data-role="fieldcontain">
+      <label for="passwordinput">Contraseña:</label>
+      <input type="password" name="passwordinput" id="passwordinput" value=""  />
+    </div>
+   
+
+<a href="Principal.html" data-role="button" data-inline="true" data-icon="delete">Cancelar</a>
+<a href="Principal.html" data-role="button" data-inline="true" data-icon="check" >Guardar</a>
+        
+
+
+        </form>
+      </div>
+      
+      
+      <div data-role="collapsible"  >
+        <h3>Conectar Twitter</h3>
+          <form action= "Principal.html">
+    <div data-role="fieldcontain">
+      <label for="textinput2">Usuario:</label>
+      <input type="text" name="textinput2" id="textinput2" value=""  />
+    </div>
+    <div data-role="fieldcontain">
+      <label for="passwordinput">Contraseña:</label>
+      <input type="password" name="passwordinput" id="passwordinput" value=""  />
+    </div>
+   
+
+<a href="Principal.html" data-role="button" data-inline="true" data-icon="delete">Cancelar</a>
+<a href="Principal.html" data-role="button" data-inline="true" data-icon="check" >Conectar</a>
+        
+
+
+        </form>
+      </div>      
+      
+      
+      
+      
+      
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>Perfil</h3>
+        <div data-role="fieldcontain">
+          <label for="textinput">Nombre:</label>
+          <input type="text" name="textinput" id="textinput" value=""  />
+        </div>
+        
+        
+        <div data-role="fieldcontain">
+          <label for="textarea">Intereses:</label>
+          <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+        </div>
+        <div data-role="fieldcontain">
+          <label for="textinput3">e-mail:</label>
+          <input type="text" name="textinput3" id="textinput3" value=""  />
+        </div>
+        <div data-role="fieldcontain">
+          <label for="textinput4">Teléfono:</label>
+          <input type="text" name="textinput4" id="textinput4" value=""  />
+        </div>
+
+      <div data-role="fieldcontain">
+        <label for="textinput2">Subir Foto:</label>
+        <input type="file" name="textinput2" id="textinput2" value=""  />
+      </div>      
+      
+ <a href="Principal.html" data-role="button" data-inline="true" data-icon="delete">Cancelar</a>
+<a href="Principal.html" data-role="button" data-inline="true" data-icon="check" >Guardar</a>     
+      
+      </div>
+      
+      
+      
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>Pantalla de Inicio</h3>
+        
+	
+<fieldset data-role="controlgroup">
+	<legend>Escoja la pantalla de inicio de la aplicación:</legend>
+     	<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked" />
+     	<label for="radio-choice-1">Menú Principal</label>
+
+     	<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"  />
+     	<label for="radio-choice-2">Pide Cola</label>
+
+     	<input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3"  />
+     	<label for="radio-choice-3">Transporte</label>
+
+
+</fieldset>
+
+      </div>
+    </div>
+
+
+  
+  </div>
+  
+  
+  
+  
+  <!------------------ Footer----------------------->
+  <div data-role="footer">		
+	<div data-role="navbar" data-iconpos="top">
+		<ul>
+			<li><a href="Pide.html"  data-icon="pide" >Pide Cola</a></li>
+			<li><a href="Transporte.html" data-icon="transporte" >Transporte</a></li>
+			<li><a href="Ubicacion.html" data-icon="ubicacion" >Mi Ubicación</a></li>
+			<li><a href="Configuracion.html" data-icon="config"  data-icon=> Configuración</a></li>            
+		</ul>
+	</div><!-- /navbar -->
+</div>
+<!--------------------------- /Fin de Footer -->
+
+
+</div>
+
+
+
+</body>
+</html>
+
